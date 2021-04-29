@@ -1,0 +1,218 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/29/2021 1:27:50 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-7OG7NSD"
+  DTS:CreatorName="DESKTOP-7OG7NSD\MaabT"
+  DTS:DTSID="{940BA928-D476-4082-BC57-713D3CD50835}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{7ED642D3-D712-4FA9-881C-F87FC884BE48}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-7OG7NSD.SsisTutorial]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D1B0C876-20DD-47E7-82A7-66C427374EA0}"
+      DTS:ObjectName="DESKTOP-7OG7NSD.SsisTutorial">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-7OG7NSD;Initial Catalog=SsisTutorial;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SMTP Connection Manager]"
+      DTS:CreationName="SMTP"
+      DTS:DTSID="{BB9817E7-4C6A-4830-853E-46B8B7DDA1A8}"
+      DTS:ObjectName="SMTP Connection Manager">
+      <DTS:ObjectData>
+        <SmtpConnectionManager
+          ConnectionString="SmtpServer=TBSClient;UseWindowsAuthentication=True;EnableSsl=False;"
+          ConnectByProxy="False" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Error Email"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Send Mail Task"
+      DTS:DTSID="{48341ec3-0328-4ba6-a3d1-b32824a0a6e2}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Error Email"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{BB9817E7-4C6A-4830-853E-46B8B7DDA1A8}"
+          SendMailTask:From="maabtojiboy@gmail.com"
+          SendMailTask:To="yunusovtojiboyxamidovich@gmail.com"
+          SendMailTask:Subject="Package5 fail"
+          SendMailTask:MessageSource="Hi ,My package Completed successfully" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ESQL_Testing"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D0E6E798-2489-44F9-A79A-957A92016FD0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ESQL_Testing"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D1B0C876-20DD-47E7-82A7-66C427374EA0}"
+          SQLTask:SqlStatementSource="select 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Success Email"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Send Mail Task"
+      DTS:DTSID="{D26E9330-3B22-4002-A6D7-7D8024F727A6}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Success Email"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{BB9817E7-4C6A-4830-853E-46B8B7DDA1A8}"
+          SendMailTask:From="maabtojiboy@gmail.com"
+          SendMailTask:To="yunusovtojiboyxamidovich@gmail.com"
+          SendMailTask:Subject="Package5 success"
+          SendMailTask:MessageSource="Hi ,My package Completed successfully" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{843D8194-FCBC-4871-8CFA-58471D5EA009}"
+      DTS:From="Package\ESQL_Testing"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Success Email" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{A0AA7300-9EEE-49AB-B791-6E20B2BF1610}"
+      DTS:From="Package\ESQL_Testing"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Error Email"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\ESQL_Testing"
+          TopLeft="308.809511538536,53.9809528099545" />
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Success Email"
+          TopLeft="211.904753484424,167.761906095157" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="358.94284487187,95.5809528099545">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-73.8380913874461,72.1809532852022"
+              Start="0,0"
+              End="-73.8380913874461,64.6809532852022">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.340582092147" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.340582092147"
+                    Point2="0,29.340582092147"
+                    Point3="-4,29.340582092147" />
+                  <mssgle:LineSegment
+                    End="-69.8380913874461,29.340582092147" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-69.8380913874461,29.340582092147"
+                    Point2="-73.8380913874461,29.340582092147"
+                    Point3="-73.8380913874461,33.340582092147" />
+                  <mssgle:LineSegment
+                    End="-73.8380913874461,64.6809532852022" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="130.4,41.6"
+          Id="Package\Error Email"
+          TopLeft="414.880935895065,167.761906095157" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="405.076178205203,95.5809528099545">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.0047576898621,72.1809532852021"
+              Start="0,0"
+              End="75.0047576898621,64.6809532852021">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.340582092147" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.340582092147"
+                    Point2="0,29.340582092147"
+                    Point3="4,29.340582092147" />
+                  <mssgle:LineSegment
+                    End="71.0047576898621,29.340582092147" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.0047576898621,29.340582092147"
+                    Point2="75.0047576898621,29.340582092147"
+                    Point3="75.0047576898621,33.340582092147" />
+                  <mssgle:LineSegment
+                    End="75.0047576898621,64.6809532852021" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="22.2610311886811,34.340582092147,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
