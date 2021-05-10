@@ -1,0 +1,124 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/4/2021 3:15:53 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-7OG7NSD"
+  DTS:CreatorName="DESKTOP-7OG7NSD\MaabT"
+  DTS:DTSID="{BD5E157C-AD61-49F8-8196-06673C9F0ADD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{CDEC7807-47F0-468C-8858-9BE360C66B47}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FTP Connection Manager]"
+      DTS:CreationName="FTP"
+      DTS:DTSID="{A239EBF4-EA98-47E5-AFF0-3A943D56BC03}"
+      DTS:ObjectName="FTP Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="192.168.1.33:21">
+          <DTS:FtpConnection
+            DTS:ServerName="192.168.1.33"
+            DTS:ServerUserName="ftp-user">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApJTBMnB0nki/4qI+Q6yXswAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACFKQKI8PgNCAQAGyFx3sfS1jhTpH/Co9u/u+k6RZh4UgAAAAAOgAAAAAIAACAAAABMfBrMYCib59ffEGKjjo9UfDcmDlGFTlQifHrRw4+kRRAAAACEi3pzNnP/J2E6kWNJh6zCQAAAAHlVMF4T/XjGL6iu/Xi+jFkHHjsdysNWwb91xZ5qrZanUl+DfTKlFCtlbvqCHdIBcJAHZ8wBXWNPBIuVG4RGZqw</DTS:Property>
+          </DTS:FtpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FTP Connection Manager 1]"
+      DTS:CreationName="FTP"
+      DTS:DTSID="{AD04B5B5-371E-4715-8ECE-3E1E9533714B}"
+      DTS:ObjectName="FTP Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="192.168.1.33:21">
+          <DTS:FtpConnection
+            DTS:ServerName="192.168.1.33"
+            DTS:ServerUserName="ftp-user">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApJTBMnB0nki/4qI+Q6yXswAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACFXb9+qfQunpEHWZmmIQ2a7RJ5M1M0bScI69HCX2qgYAAAAAAOgAAAAAIAACAAAAARImI/1gWBeTeUyH1V5O+O3V1FTpDM9vgPUo1aNRtUchAAAABuiqthwKxSXHLoaQ0CoDwZQAAAAGH9IZV8l4ekySTYwpjayIJ2ym79HKnwNGfX7cI5n/j3z7ZFi/kNb2e1EBIq2uHuUU9qudbd5P4uEz/454egcVY</DTS:Property>
+          </DTS:FtpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalFolder]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{3D50BDE5-1FA7-453B-946E-9D0DFB6F7138}"
+      DTS:ObjectName="LocalFolder">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Users\MaabT\OneDrive\Desktop\LocalFolder" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E7CE9898-C429-4D8F-844C-84A2392900F0}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;/Test/Sale*&quot;+REPLACE(SUBSTRING((DT_WSTR,30)GETDATE(),1,10),&quot;-&quot;,&quot;&quot;)+&quot;.*&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="RemoteFolderPath">
+      <DTS:VariableValue
+        DTS:DataType="8">/Test/Sale*20210504.*</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FTP Task"
+      DTS:CreationName="Microsoft.FtpTask"
+      DTS:Description="FTP Task"
+      DTS:DTSID="{3B49417D-DE25-49C0-878B-1FB0B045EC43}"
+      DTS:ExecutableType="Microsoft.FtpTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FTP Task"
+      DTS:TaskContact="FTP Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FtpData
+          ConnectionName="{AD04B5B5-371E-4715-8ECE-3E1E9533714B}"
+          TaskOperationType="Receive"
+          TaskLocalPath="LocalFolder"
+          TaskRemotePath="/Test/Customer_NA.xlsx"
+          TaskOverwriteDest="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="123.2,41.6"
+          Id="Package\FTP Task"
+          TopLeft="104.033329194122,47.8111114910797" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
