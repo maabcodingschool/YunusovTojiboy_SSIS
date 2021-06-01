@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>TechBrothers_SSIS_Tutorial_From_Part120</Name>
+    <LastWriteTime>2021-05-31T12:47:06.6334892Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>Part121.RejectAlreadyLoadedFiles.dtsx</Name>
+      <LastWriteTime>2021-05-11T11:51:09.339862Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part122.Configure Execute SQL Task when Query Might Not Return Results.dtsx</Name>
+      <LastWriteTime>2021-05-11T12:40:55.7177729Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part123.Get Delete,Update Record Count From Execute SQL Task Write to File.dtsx</Name>
+      <LastWriteTime>2021-05-11T12:42:17.7899193Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part124.How to Build Query in Variable and Use in Execute SQL Task.dtsx</Name>
+      <LastWriteTime>2021-05-11T13:00:00.5869569Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part125.Using Variable in IF Clause in Execute SQL Task.dtsx</Name>
+      <LastWriteTime>2021-05-12T16:40:37.2924505Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part126.Run Multiple Stored Procedure in Execute SQL Task with Input Parameters.dtsx</Name>
+      <LastWriteTime>2021-05-12T16:54:42.727126Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part127.Get Execution Time of Multiple Stored Procedures from Execute SQL Task.dtsx</Name>
+      <LastWriteTime>2021-05-12T17:15:09.9351363Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part129.Use Variables in Script Task.dtsx</Name>
+      <LastWriteTime>2021-05-12T18:00:27.0934423Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part128.How to Use Project Level and Package Level Parameters in Script Task.dtsx</Name>
+      <LastWriteTime>2021-05-12T17:43:33.1705984Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part130.How To Execute Stored Procedure In Script Task.dtsx</Name>
+      <LastWriteTime>2021-05-12T18:39:05.3317977Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part131.Difference between ReadOnly and ReadandWrite.dtsx</Name>
+      <LastWriteTime>2021-05-13T08:04:32.2400498Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part131.1.Delete Top N Rows from Flat File.dtsx</Name>
+      <LastWriteTime>2021-05-13T08:16:19.9049069Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part132.Change Dot NET FrameWork.dtsx</Name>
+      <LastWriteTime>2021-05-13T08:25:03.3428685Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part133.Load Text Files,Zip them to Zip File with DateTime.dtsx</Name>
+      <LastWriteTime>2021-05-13T12:12:55.9882613Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part134.Extract files from Zip Files Delete Zip Files once UnZiped.dtsx</Name>
+      <LastWriteTime>2021-05-13T09:07:21.359917Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part135.Load, Zip and Delete Multiple Flat Files.dtsx</Name>
+      <LastWriteTime>2021-05-13T09:26:01.5354589Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part136.Zip Different Types of Files according to Extension.dtsx</Name>
+      <LastWriteTime>2021-05-13T12:14:43.3541317Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part137.Zip or Compress Files according to the Name of Files.dtsx</Name>
+      <LastWriteTime>2021-05-13T13:42:04.1916787Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part138.Get File names from Zip Files and Insert into SQL Server Table.dtsx</Name>
+      <LastWriteTime>2021-05-13T14:04:27.9375489Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part139.Zip ( Compress) Multiple Folders and Delete.dtsx</Name>
+      <LastWriteTime>2021-05-13T14:18:24.1944199Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part140.Create Zip file per day by using Date and Add Files to it.dtsx</Name>
+      <LastWriteTime>2021-05-13T14:33:33.3257151Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part141 .What are Event Handlers.dtsx</Name>
+      <LastWriteTime>2021-05-15T15:08:17.2468726Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part142.Precedence Constaints vs Event Handlers.dtsx</Name>
+      <LastWriteTime>2021-05-15T15:14:07.352605Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part143.What type of Tasks can we use in Event Handler Pane.dtsx</Name>
+      <LastWriteTime>2021-05-15T15:16:42.221522Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part144 .Relationship between Executable and Event Handler in Event Handler Pane.dtsx</Name>
+      <LastWriteTime>2021-05-15T15:26:17.3583378Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part145 .Data Viewer in Data Flow Task.dtsx</Name>
+      <LastWriteTime>2021-05-15T15:32:43.0274862Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part146.How to Debug an SSIS Package.dtsx</Name>
+      <LastWriteTime>2021-05-15T15:43:25.3609485Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part146.1 How to Change Value of Variable while Debugging.dtsx</Name>
+      <LastWriteTime>2021-05-15T15:43:42.2031596Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part147.How to Remove Warnings from an SSIS Package.dtsx</Name>
+      <LastWriteTime>2021-05-15T16:03:06.6846297Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part148.Annotations (Comments).dtsx</Name>
+      <LastWriteTime>2021-05-15T17:38:30.5862607Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part149.Diff between Package Level and Project Level Connection Manager.dtsx</Name>
+      <LastWriteTime>2021-05-15T17:38:53.4762613Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part150.What is Staging Database and Why to Use it.dtsx</Name>
+      <LastWriteTime>2021-05-15T17:52:54.1102546Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part151.Load Data from Excel Files when Number of Columns can decrease in Excel Sheet.dtsx</Name>
+      <LastWriteTime>2021-05-18T10:02:53.8360793Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part152.Load Only Matching Column Data to SQL Server Table from Excel Files Dynamically.dtsx</Name>
+      <LastWriteTime>2021-05-18T10:26:20.9566092Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part153.How to Load Excel File's Information to SQL Server Table.dtsx</Name>
+      <LastWriteTime>2021-05-18T10:50:24.5087345Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part154.How to create Table for each sheet in Excel Files and load data to it dynamically.dtsx</Name>
+      <LastWriteTime>2021-05-18T11:54:14.9806114Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part155.How to Create Table per Excel File AND Load all Sheets Data Dynamically.dtsx</Name>
+      <LastWriteTime>2021-05-18T12:06:42.3003019Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part156.Create CSV file per Excel File and Load All Sheets from Excel File.dtsx</Name>
+      <LastWriteTime>2021-05-18T12:25:52.109623Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part157.How to Create CSV File for Each Excel Sheet from Excel Files.dtsx</Name>
+      <LastWriteTime>2021-05-18T12:40:34.3354134Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part158.How to Load Excel File Name and Sheet Name with Data to SQL Server.dtsx</Name>
+      <LastWriteTime>2021-05-18T12:52:24.91362Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part159.Import data from Multiple Excel Sheets with a pattern of sheet name.dtsx</Name>
+      <LastWriteTime>2021-05-18T13:02:28.487185Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part160.Import Data from Excel Files for specific Sheet Name to SQL Table.dtsx</Name>
+      <LastWriteTime>2021-05-19T13:25:44.9921997Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part161.Load Data To Tables according to Excel Sheet Names from Excel Files dynamically.dtsx</Name>
+      <LastWriteTime>2021-05-19T13:38:19.3531184Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part162.Load Excel Files with Single or Multiple Sheets to SQL Tables according to Excel File Name.dtsx</Name>
+      <LastWriteTime>2021-05-19T13:53:17.0663528Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part163.Read Excel Sheet Data after Skipping Rows.dtsx</Name>
+      <LastWriteTime>2021-05-19T14:04:21.0473515Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part164.Create Excel File Dynamically from Table or View by using Script Task.dtsx</Name>
+      <LastWriteTime>2021-05-24T12:35:22.3650908Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part165.Create Excel File Dynamically for Stored Procedure Results.dtsx</Name>
+      <LastWriteTime>2021-05-24T12:52:11.1521807Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part166.Export SQL Server Tables from Database to Excel File Dynamically.dtsx</Name>
+      <LastWriteTime>2021-05-24T13:03:40.3745245Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part167.How to Convert CSV or Text Files to Excel Files.dtsx</Name>
+      <LastWriteTime>2021-05-24T13:12:07Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part168.Load All CSV Files to Excel Sheets in single Excel File.dtsx</Name>
+      <LastWriteTime>2021-05-31T12:09:10.0082851Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part169.How to Export Data to Multiple Excel Sheets from Single SQL Server Table.dtsx</Name>
+      <LastWriteTime>2021-05-31T12:37:39.5243739Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Part170.How to Export All tables of a database to Excel Files with Datetime.dtsx</Name>
+      <LastWriteTime>2021-05-31T12:47:06.5989825Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>
